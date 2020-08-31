@@ -6,8 +6,8 @@ import Ledgeit from './artwork'
 
 function App() {
   const [computer, setComputer] = useState(new Computer({ 
-  seed: 'start voice neutral science goddess object when satoshi bamboo page elbow crucial', chain: 'BSV',
-  network: 'livenet', // testnet or livenet
+  seed: 'apart agent divert fence gravity alter rib ten normal always annual federal worth express wire', chain: 'BSV',
+  network: 'testnet', // testnet or livenet
   path: "m/44'/0'/0'/0"}))
  
 
@@ -26,7 +26,7 @@ function App() {
   useEffect(() => {
     const fetchRevs = async () => {
       setBalance(await computer.db.wallet.getBalance())
-      setRevs(await computer.getOwnedRevs(computer.db.wallet.getPublicKey()))
+      setRevs(await computer.getRevs(computer.db.wallet.getPublicKey()))
       setTimeout(() => setRefresh(refresh + 1), 3500)
     }
     fetchRevs()
@@ -82,7 +82,7 @@ function App() {
         <h3>Load up your account by scanning here.</h3>
         {/* need to create code that autogenerates new qrc with new wallet creations */}
         {/* <img src="ledgeit-public.png" alt="qrc-ledgeit"></img>
-      </div> */} */}
+      </div> */}
       <div className = "newWallet">
       <h3>Your Wallet</h3>
       <b>Address</b>&nbsp;{computer.db.wallet.getAddress().toString()}<br />
