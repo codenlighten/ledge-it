@@ -2,6 +2,7 @@
   text-align: left;
   margin: 20px;
   line-height: 30px;
+  width: max-content;
 
 }
 
@@ -23,13 +24,16 @@ input[type=string] {
   padding: 5px;
   margin-bottom: 5px;
   font-size: inherit;
-  width: 50%;
+  width: 25%;
 }
 
 input {
   padding: 5px;
   margin: 2px;
 }
+
+
+
 
 /* .navbar {height: 30%;
 background-image: linear-gradient(blue, black);
@@ -38,13 +42,25 @@ background-image: linear-gradient(blue, black);
 /* .newLedgeit {
   background-color: cornflowerblue;
 } */
+.navbar {
 
+  background-image: linear-gradient(blue, black);
+
+
+}
 .navbar h1 {text-align: left;
 padding: 20px;
 color: white;
+font-size: 3rem;
+display:inline;
 }
 .navbar h2 {color:white;
 padding: 20px;}
+
+
+.warning {
+  color: maroon;
+}
 
 .createbutton {
   background-color: blue;
@@ -75,4 +91,10 @@ button[type=submit] {
   flex-wrap: wrap;
   -webkit-flex-direction: row;
   flex-direction: row;
+}
+
+.pen-paper-icon {
+
+  width:10%;
+
 }

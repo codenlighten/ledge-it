@@ -51,6 +51,7 @@ function App() {
   return (
     <div className="App">
     <div className="navbar">
+      <img src="paper-pen.png" className="pen-paper-icon"></img>
     <h1>LedgeIt!</h1>
     <h2>It's Your Statement...Make it Count!</h2>
     </div>
@@ -67,7 +68,7 @@ function App() {
         Statement<br />
         <textarea type="string" placeholder="what's on your mind?" value={statement} onChange={e => setStatement(e.target.value)} />
         <br/>
-
+<h4 className="warning">***This is permanent, use responsibly!</h4>
         <button className="createbutton" type="submit" value="Send Bitcoin">Create Ledgeit</button>
       </form>
       </div>
