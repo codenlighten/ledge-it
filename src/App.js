@@ -6,9 +6,9 @@ import Ledgeit from './artwork'
 
 function App() {
   const [computer, setComputer] = useState(new Computer({ 
-  seed: 'apart agent divert fence gravity alter rib ten normal always annual federal worth express wire', chain: 'BSV',
-  network: 'testnet', // testnet or livenet
-  path: "m/44'/0'/0'/0"}))
+    seed: 'apart agent divert fence gravity alter rib ten normal always annual federal worth express wire', chain: 'BSV',
+    network: 'testnet', // testnet or livenet
+    path: "m/44'/0'/0'/0"}))
  
 
 
@@ -89,7 +89,10 @@ function App() {
       <b>Address</b>&nbsp;{computer.db.wallet.getAddress().toString()}<br />
       <b>Public Key</b>&nbsp;{computer.db.wallet.getPublicKey().toString()}<br />
       <b>Balance</b>&nbsp;{balance/1e8} {computer.db.wallet.restClient.chain}<br />
-      <button type="submit" onClick={() => setComputer(new Computer())}>Generate New Wallet</button>
+      {/* <button type="submit" onClick={() => setComputer(new Computer())}>Generate New Wallet</button> */}
+      
+      <h4>Thanks for using LedgeIt!</h4>
+      <h4>Created using <a href="https://bitcoincomputer.io">BitcoinComputer</a></h4>
       </div>
     
     </div>
