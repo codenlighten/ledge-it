@@ -6,7 +6,7 @@ import Ledgeit from './artwork'
 
 function App() {
   const [computer, setComputer] = useState(new Computer({ 
-    seed: 'apart agent divert fence gravity alter rib ten normal always annual federal worth express wire', chain: 'BSV',
+    seed: 'property garden carry orchard crisp review step predict weather chef senior invite used trophy eye', chain: 'BSV',
     network: 'testnet', // testnet or livenet
     path: "m/44'/0'/0'/0"}))
  
